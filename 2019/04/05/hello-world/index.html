@@ -362,6 +362,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
 
           
 
@@ -543,7 +574,7 @@
 
           
           
-
+          
           
 
         </div>
@@ -579,10 +610,10 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-angellist"></i>
+         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+ <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-star"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">caishiyin</span>
 
@@ -599,8 +630,7 @@
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
 
   
@@ -609,17 +639,19 @@
 
 
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-  <span class="site-uv">
-    我的第 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位朋友，
+  <span class="site-uv" title="我的第 undefined 位朋友，">
+    <i class="fa fa-user"></i>
+    <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
   </span>
   
 
   
-  <span class="site-pv">
-    历经 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次回眸才与你相遇
+  <span class="site-pv" title="历经 undefined 次回眸才与你相遇">
+    <i class="fa fa-eye"></i>
+    <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
   </span>
   
 </div>
@@ -1151,7 +1183,7 @@
       ages = ages.replace(/hours?/, "小时");
       ages = ages.replace(/minutes?/, "分");
       ages = ages.replace(/seconds?/, "秒");
-      ages = ages.replace(/\d+/g, '<span style="color:#1890ff">$&</span>');
+      ages = ages.replace(/\d+/g, '<span style="color:#FF9900">$&</span>');
       div.innerHTML = `我已在此等候你 ${ages}`;
     }
     var div = document.createElement("div");

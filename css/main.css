@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #da7d74;
+  background: #d9ff5e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2827,6 +2827,12 @@ img.img-topic {
 .busuanzi-value,
 .total-count {
   color: #f90;
+}
+img.img-topic {
+  width: 100%;
+}
+#instantclick {
+  display: none;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {

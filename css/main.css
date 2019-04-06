@@ -1077,12 +1077,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .back-to-top.back-to-top-on {
@@ -1640,6 +1642,35 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.swal-overlay {
+  background-color: transparent;
+}
+.copy-success-message {
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  width: auto;
+  margin: 16x 0px;
+  vertical-align: top;
+}
+.copy-success-message .swal-content {
+  margin: 0px 0px !important;
+  padding: 10px 16px;
+  line-height: 1em;
+}
+.copy-success-message .message-icon {
+  color: #52c41a;
+  margin-right: 8px;
+}
+.copy-success-message .message-content {
+  font-size: 14px;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1675,16 +1706,6 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none !important;
-  }
-}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1713,12 +1734,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .sidebar-toggle-line {
@@ -1821,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2485a8;
+  background: #fa2679;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1940,6 +1963,32 @@ pre .javascript .function {
 }
 .post-toc .nav .active-current > a:hover {
   color: #87daff;
+}
+.sidebar-active #sidebar-dimmer {
+  opacity: 0.7;
+  -webkit-transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  transform: translateX(-150%);
+  transition: opacity 0.2s;
+}
+#sidebar-dimmer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0s 0.2s;
+}
+@media (max-width: 767px) {
+  #sidebar-dimmer {
+    display: block;
+  }
 }
 .footer {
   font-size: 14px;
@@ -2667,9 +2716,15 @@ body {
   background: url("/images/bg1.jpg") none repeat scroll !important;
 }
 .footer {
-  background: #f5fffa none repeat scroll !important;
+  background: none;
+}
+.footer-inner {
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  color: #222;
 }
 #sidebar {
+  background: url("/images/sidebarbg3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2678,6 +2733,44 @@ body {
 #sidebar span,
 #sidebar a {
   color: #699;
+}
+.site-author-name {
+  margin: 30px 0 0;
+  font-family: 'Comic Sans MS', sans-serif !important;
+}
+.links-of-author a:before {
+  background: #f90;
+}
+.links-of-blogroll {
+  font-size: 14px;
+  margin-bottom: 42px;
+}
+.links-of-author {
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+.sidebar-inner {
+  color: #699;
+}
+.sidebar a {
+  color: #699;
+  border-bottom-color: #699;
+  border-bottom: none;
+}
+.sidebar a:hover {
+  color: #0c0b0b;
+}
+.site-state-item {
+  display: inline-block;
+  padding: 8px 28px;
+  border-left: 1px solid #699;
+}
+.sidebar-nav .sidebar-nav-active {
+  color: #699;
+  border-bottom-color: #699;
+}
+.sidebar-nav li:hover {
+  color: #0c0b0b;
 }
 .post-button .btn {
   background: #699;
@@ -2722,18 +2815,17 @@ img.img-topic {
   color: #fff;
   border-bottom-color: #fff;
 }
-::selection {
+::selection,
+.page-post-detail .sidebar-toggle-line {
   background: #699;
   border-bottom-color: #699;
-}
-.busuanzi-value {
-  color: #1890ff;
 }
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
 .with-love,
-.busuanzi-value {
+.busuanzi-value,
+.total-count {
   color: #f90;
 }
 @-moz-keyframes heartAnimate {

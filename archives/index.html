@@ -52,6 +52,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -75,7 +107,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="caishiyin,Hexo, 前端, Blog">
 
 
 
@@ -89,7 +121,7 @@
 <meta name="description" content="人间不值得">
 <meta property="og:type" content="website">
 <meta property="og:title" content="诗&#39;S BLOG">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="https://ccccai.github.io/archives/index.html">
 <meta property="og:site_name" content="诗&#39;S BLOG">
 <meta property="og:description" content="人间不值得">
 <meta property="og:locale" content="zh-Hans">
@@ -105,7 +137,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -125,7 +157,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="https://ccccai.github.io/archives/">
 
 
 
@@ -166,7 +198,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">世界で一番顽张っている君に</p>
       
   </div>
 
@@ -196,22 +228,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
+            归档
           </a>
         </li>
       
@@ -226,22 +248,32 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            归档
+            标签
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-search">
-          <a href="/search/" rel="section">
+        <li class="menu-item menu-item-top">
+          <a href="/top/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-search"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br>
             
-            搜索
+            top
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
           </a>
         </li>
       
@@ -333,7 +365,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/04/05/test-my-site/" itemprop="url">
+            <a class="post-title-link" href="/back-end/2019/04/05/test-my-site/" itemprop="url">
               
                 <span itemprop="name">win10+iis10+phpStudy配置php开发环境</span>
               
@@ -368,7 +400,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/04/05/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/uncategorized/2019/04/05/hello-world/" itemprop="url">
               
                 <span itemprop="name">Hello World</span>
               
@@ -419,6 +451,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -451,6 +485,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
@@ -467,6 +510,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ccccai" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:greenycaicai@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -501,6 +560,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">caishiyin</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">字数统计&#58;</span>
+    
+    <span class="total-count" title="字数统计">185</span>
   
 </div>
 
@@ -1038,10 +1106,12 @@
     var titleTime;
     document.addEventListener('visibilitychange', function() {
       if (document.hidden) {
+        $('[rel="icon"]').attr('href', "/images/favicon-error-32x32-next.png");
         document.title = '(つェ⊂)我藏好了哦~' + OriginTitile;
         clearTimeout(titleTime);
       } else {
-        document.title = '(*´∇｀*) 被你发现啦~' + OriginTitile;
+        $('[rel="icon"]').attr('href', "/images/favicon-32x32-next.png");
+        document.title = '(*´∇｀*)被你发现啦~' + OriginTitile;
         titleTime = setTimeout(function() {
           document.title = OriginTitile;
         }, 2000);

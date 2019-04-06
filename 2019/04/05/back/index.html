@@ -118,18 +118,28 @@
 
 
 
-<meta name="description" content="1.上phpstudy官网下载安装包，解压安装。2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：6.配置好默认文档（i">
+<meta name="description" content="之前项目需要，服务器本身网页用iis部署，后安装了phpstudy但不愿使用Nginx以及Apache占用系统资源，捣鼓了下下，记录下过程。">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="win10+iis10+phpStudy配置php开发环境">
-<meta property="og:url" content="https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/index.html">
+<meta property="og:url" content="https://ccccai.github.io/2019/04/05/back/index.html">
 <meta property="og:site_name" content="诗&#39;S BLOG">
-<meta property="og:description" content="1.上phpstudy官网下载安装包，解压安装。2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：6.配置好默认文档（i">
+<meta property="og:description" content="之前项目需要，服务器本身网页用iis部署，后安装了phpstudy但不愿使用Nginx以及Apache占用系统资源，捣鼓了下下，记录下过程。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-06T11:54:43.117Z">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis1.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis2.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis3.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis4.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis5.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis6.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis7.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis8.png">
+<meta property="og:image" content="https://ccccai.github.io/images/iis/iis9.png">
+<meta property="og:updated_time" content="2019-04-06T15:55:49.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="win10+iis10+phpStudy配置php开发环境">
-<meta name="twitter:description" content="1.上phpstudy官网下载安装包，解压安装。2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：6.配置好默认文档（i">
+<meta name="twitter:description" content="之前项目需要，服务器本身网页用iis部署，后安装了phpstudy但不愿使用Nginx以及Apache占用系统资源，捣鼓了下下，记录下过程。">
+<meta name="twitter:image" content="https://ccccai.github.io/images/iis/iis1.png">
 
 
 
@@ -159,7 +169,7 @@
 
 
 
-  <link rel="canonical" href="https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/">
+  <link rel="canonical" href="https://ccccai.github.io/2019/04/05/back/">
 
 
 
@@ -346,7 +356,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/">
+    <link itemprop="mainEntityOfPage" href="https://ccccai.github.io/2019/04/05/back/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="caishiyin">
@@ -398,8 +408,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/back-end/" itemprop="url" rel="index">
-                    <span itemprop="name">back-end</span>
+                  <a href="/categories/后端/" itemprop="url" rel="index">
+                    <span itemprop="name">后端</span>
                   </a>
                 </span>
 
@@ -429,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  287
+                  467
                 </span>
               
 
@@ -439,6 +449,10 @@
             </div>
           
 
+          
+              <div class="post-description">
+                  之前项目需要，服务器本身网页用iis部署，后安装了phpstudy但不愿使用Nginx以及Apache占用系统资源，捣鼓了下下，记录下过程。
+              </div>
           
 
         </div>
@@ -453,7 +467,38 @@
       
 
       
-        <h5 id="1-上phpstudy官网下载安装包，解压安装。"><a href="#1-上phpstudy官网下载安装包，解压安装。" class="headerlink" title="1.上phpstudy官网下载安装包，解压安装。"></a>1.上phpstudy官网下载安装包，解压安装。</h5><h5 id="2-打开phpstudy，切换版本，选择php7-0-12-nts-IIS7-8。"><a href="#2-打开phpstudy，切换版本，选择php7-0-12-nts-IIS7-8。" class="headerlink" title="2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。"></a>2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。</h5><h5 id="3-切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。"><a href="#3-切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。" class="headerlink" title="3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。"></a>3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。</h5><h5 id="4-打开iis管理器，看到左侧导航栏，定位到“网站”目录下。"><a href="#4-打开iis管理器，看到左侧导航栏，定位到“网站”目录下。" class="headerlink" title="4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。"></a>4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。</h5><h5 id="5-在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示："><a href="#5-在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：" class="headerlink" title="5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示："></a>5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：</h5><h5 id="6-配置好默认文档（index-php、index-html、index-htm，优先顺序自定义）-其它的可以删除。"><a href="#6-配置好默认文档（index-php、index-html、index-htm，优先顺序自定义）-其它的可以删除。" class="headerlink" title="6.配置好默认文档（index.php、index.html、index.htm，优先顺序自定义）,其它的可以删除。"></a>6.配置好默认文档（index.php、index.html、index.htm，优先顺序自定义）,其它的可以删除。</h5><h6 id="1）琐碎"><a href="#1）琐碎" class="headerlink" title="1）琐碎"></a>1）琐碎</h6><h6 id="2）琐碎"><a href="#2）琐碎" class="headerlink" title="2）琐碎"></a>2）琐碎</h6><h5 id="7-添加php映射，选择“处理程序映射”-–-gt-“添加模块映射”"><a href="#7-添加php映射，选择“处理程序映射”-–-gt-“添加模块映射”" class="headerlink" title="7.添加php映射，选择“处理程序映射” –&gt; “添加模块映射”"></a>7.添加php映射，选择“处理程序映射” –&gt; “添加模块映射”</h5><h5 id="8-填写模块信息，如下图，注意，请求路径-php的不能少。选择可执行文件，即你相应php版本目录下的php-cgi-exe"><a href="#8-填写模块信息，如下图，注意，请求路径-php的不能少。选择可执行文件，即你相应php版本目录下的php-cgi-exe" class="headerlink" title="8.填写模块信息，如下图，注意，请求路径.php的不能少。选择可执行文件，即你相应php版本目录下的php-cgi.exe"></a>8.填写模块信息，如下图，注意，请求路径<em>.php的</em>不能少。选择可执行文件，即你相应php版本目录下的php-cgi.exe</h5><h5 id="9-填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。"><a href="#9-填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。" class="headerlink" title="9.填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。"></a>9.填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。</h5><h5 id="10-确定后，映射模块列表里有你添加的信息，说明添加模块成功。"><a href="#10-确定后，映射模块列表里有你添加的信息，说明添加模块成功。" class="headerlink" title="10.确定后，映射模块列表里有你添加的信息，说明添加模块成功。"></a>10.确定后，映射模块列表里有你添加的信息，说明添加模块成功。</h5><h5 id="11-重启iis。在浏览器输入访问地址即可访问网站。"><a href="#11-重启iis。在浏览器输入访问地址即可访问网站。" class="headerlink" title="11.重启iis。在浏览器输入访问地址即可访问网站。"></a>11.重启iis。在浏览器输入访问地址即可访问网站。</h5>
+        <p>&#x5C31;&#x9171;&#x3002;&#x5F00;&#x59CB;<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f633.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f633.png?v8">&#x1F633;</span></p>
+<h2 id="&#x9996;&#x5148;&#x786E;&#x4FDD;&#x4F60;&#x7535;&#x8111;&#x5B89;&#x88C5;&#x4E86;iis&#x548C;phpstudy"><a href="#&#x9996;&#x5148;&#x786E;&#x4FDD;&#x4F60;&#x7535;&#x8111;&#x5B89;&#x88C5;&#x4E86;iis&#x548C;phpstudy" class="headerlink" title="&#x9996;&#x5148;&#x786E;&#x4FDD;&#x4F60;&#x7535;&#x8111;&#x5B89;&#x88C5;&#x4E86;iis&#x548C;phpstudy"></a>&#x9996;&#x5148;&#x786E;&#x4FDD;&#x4F60;&#x7535;&#x8111;&#x5B89;&#x88C5;&#x4E86;iis&#x548C;phpstudy</h2><div class="note default"><p>iis&#x6211;&#x7535;&#x8111;win10&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x3002;phpstudy&#x9700;&#x8981;&#x4E0A;&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x89E3;&#x538B;&#x5B89;&#x88C5;&#x3002;</p></div>
+
+<h2 id="&#x9009;&#x62E9;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x7684;IIS&#x548C;PHP&#x7248;&#x672C;"><a href="#&#x9009;&#x62E9;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x7684;IIS&#x548C;PHP&#x7248;&#x672C;" class="headerlink" title="&#x9009;&#x62E9;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x7684;IIS&#x548C;PHP&#x7248;&#x672C;"></a>&#x9009;&#x62E9;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x7684;IIS&#x548C;PHP&#x7248;&#x672C;</h2><div class="note default"><p>&#x6253;&#x5F00;phpstudy&#xFF0C;&#x5207;&#x6362;&#x7248;&#x672C;&#xFF0C;&#x9009;&#x62E9;php7.0.12-nts+IIS7/8&#x3002;</p></div>
+
+<div class="note default"><br>  <p>&#x5207;&#x6362;&#x7248;&#x672C;&#x540E;&#xFF0C;&#x54C8;&#x5440;&#xFF01;&#x6211;&#x7684;mysql&#x542F;&#x52A8;&#x4E0D;&#x8D77;&#x6765;&#xFF01;&#x5927;&#x4E08;&#x592B;&#x6D85;&#xFF0C;&#x6211;&#x521A;&#x597D;&#x7528;&#x4E0D;&#x5230;phpstudy&#x7684;Mysql&#x96C6;&#x6210;&#x670D;&#x52A1;&#x563B;&#x563B;<span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png?v8">&#x1F61C;</span>&#x3002;</p><br>  <p>&#x4E0D;&#x8FC7;&#x4F60;&#x5982;&#x679C;&#x8981;&#x7528;&#x5B83;&#x7684;mysql&#x670D;&#x52A1;&#x7684;&#x8BDD;&#xFF0C;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&#x4F60;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x539F;&#x56E0;&#x662F;&#x5565;&#xFF0C;&#x5BF9;&#x75C7;&#x4E0B;&#x836F;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x591A;&#x8BF4;&#x60F9;</p><br></div>
+
+<h2 id="&#x914D;&#x7F6E;IIS&#x7BA1;&#x7406;&#x5668;"><a href="#&#x914D;&#x7F6E;IIS&#x7BA1;&#x7406;&#x5668;" class="headerlink" title="&#x914D;&#x7F6E;IIS&#x7BA1;&#x7406;&#x5668;"></a>&#x914D;&#x7F6E;IIS&#x7BA1;&#x7406;&#x5668;</h2><div class="note default"><p>&#x6253;&#x5F00;iis&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x770B;&#x5230;&#x5DE6;&#x4FA7;&#x5BFC;&#x822A;&#x680F;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;&#x201C;&#x7F51;&#x7AD9;&#x201D;&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p></div><br><div class="note default"><p>&#x5728;&#x201C;&#x7F51;&#x7AD9;&#x201D;&#x5904;&#x53F3;&#x51FB;&#xFF0C;&#x9009;&#x62E9;&#x6DFB;&#x52A0;&#x7F51;&#x7AD9;&#xFF0C;&#x5C06;&#x76F8;&#x5E94;&#x4FE1;&#x606F;&#x586B;&#x5199;&#x5B8C;&#x6574;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p></div><br><img src="/images/iis/iis1.png" alt="iis1"><br><div class="note default"><p>&#x914D;&#x7F6E;&#x597D;&#x9ED8;&#x8BA4;&#x6587;&#x6863;&#xFF08;index.php&#x3001;index.html&#x3001;index.htm&#xFF0C;&#x4F18;&#x5148;&#x987A;&#x5E8F;&#x81EA;&#x5B9A;&#x4E49;&#xFF09;,&#x5176;&#x5B83;&#x7684;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x3002;</p></div>
+
+<p><img src="/images/iis/iis2.png" alt="iis2"><br><img src="/images/iis/iis3.png" alt="iis3"></p>
+<h2 id="&#x6DFB;&#x52A0;php&#x6620;&#x5C04;"><a href="#&#x6DFB;&#x52A0;php&#x6620;&#x5C04;" class="headerlink" title="&#x6DFB;&#x52A0;php&#x6620;&#x5C04;"></a>&#x6DFB;&#x52A0;php&#x6620;&#x5C04;</h2><div class="note default"><p>&#x9009;&#x62E9;&#x201C;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x6620;&#x5C04;&#x201D; &#x2013;&gt; &#x201C;&#x6DFB;&#x52A0;&#x6A21;&#x5757;&#x6620;&#x5C04;&#x201D;</p></div><br><img src="/images/iis/iis4.png" alt="iis4"><br><img src="/images/iis/iis5.png" alt="iis5"><br><div class="note default"><p>&#x586B;&#x5199;&#x6A21;&#x5757;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;<em>.php&#x7684;</em>&#x4E0D;&#x80FD;&#x5C11;&#x3002;&#x9009;&#x62E9;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x4F60;&#x76F8;&#x5E94;php&#x7248;&#x672C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;php-cgi.exe</p></div><br><img src="/images/iis/iis6.png" alt="iis6"><br><div class="note default"><p>&#x586B;&#x5199;&#x597D;&#x540D;&#x79F0;&#xFF0C;&#x7136;&#x540E;&#x8FD8;&#x8981;&#x914D;&#x7F6E;&#x8BF7;&#x6C42;&#x9650;&#x5236;&#xFF0C;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;&#x201D;&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x8DEF;&#x786E;&#x5B9A;&#x3002;</p></div><br><img src="/images/iis/iis7.png" alt="iis7"><br><br><img src="/images/iis/iis8.png" alt="iis8"><br><div class="note default"><p>&#x786E;&#x5B9A;&#x540E;&#xFF0C;&#x6620;&#x5C04;&#x6A21;&#x5757;&#x5217;&#x8868;&#x91CC;&#x6709;&#x4F60;&#x6DFB;&#x52A0;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BF4;&#x660E;&#x6DFB;&#x52A0;&#x6A21;&#x5757;&#x6210;&#x529F;&#x3002;</p></div>   
+
+<p><img src="/images/iis/iis9.png" alt="iis9">  </p>
+<h2 id="OJBK"><a href="#OJBK" class="headerlink" title="OJBK"></a>OJBK</h2><div class="note default"><p>11.&#x91CD;&#x542F;iis&#x3002;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x5373;&#x53EF;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#x3002;</p></div><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     
@@ -479,7 +524,7 @@
   <!-- 本文作者 -->
   <li class="post-copyright-author">
     <strong>本文作者： </strong>
-    蔡诗茵
+    caishiyin
   </li>
 
   <!-- 创建时间 -->
@@ -491,14 +536,14 @@
   <!-- 修改时间 -->
   <li>
     <strong>修改时间： </strong>
-    2019年04月06日 - 19时04分
+    2019年04月06日 - 23时04分
   </li>
 
   <!-- 引用链接 -->
   <li class="post-copyright-link">
     <strong>引用链接：</strong>
-    <a href="https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/" title="win10+iis10+phpStudy配置php开发环境">https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/</a>
-    <span class="copy-path" title="点击复制引用链接"><i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="[蔡诗茵's Blog | win10+iis10+phpStudy配置php开发环境](https://ccccai.github.io/back-end/2019/04/05/win10+iis10+phpStudy配置php开发环境/)" aria-label="复制成功"></i></span>
+    <a href="https://ccccai.github.io/2019/04/05/back/" title="win10+iis10+phpStudy配置php开发环境">https://ccccai.github.io/2019/04/05/back/</a>
+    <span class="copy-path" title="点击复制引用链接"><i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="[caishiyin's Blog | win10+iis10+phpStudy配置php开发环境](https://ccccai.github.io/2019/04/05/back/)" aria-label="复制成功"></i></span>
   </li>
 
   <!-- 版权声明 -->
@@ -559,7 +604,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/2019/04/05/hello-world/" rel="next" title="Hello World">
+              <a href="/2019/04/05/hello-world/" rel="next" title="Hello World">
                 <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
@@ -721,7 +766,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-上phpstudy官网下载安装包，解压安装。"><span class="nav-number">1.</span> <span class="nav-text">1.上phpstudy官网下载安装包，解压安装。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-打开phpstudy，切换版本，选择php7-0-12-nts-IIS7-8。"><span class="nav-number">2.</span> <span class="nav-text">2.打开phpstudy，切换版本，选择php7.0.12-nts+IIS7/8。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。"><span class="nav-number">3.</span> <span class="nav-text">3.切换版本后，可能你的mysql启不起来，没关系，两个window服务器都用不到phpstudy的Mysql集成服务。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-打开iis管理器，看到左侧导航栏，定位到“网站”目录下。"><span class="nav-number">4.</span> <span class="nav-text">4.打开iis管理器，看到左侧导航栏，定位到“网站”目录下。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示："><span class="nav-number">5.</span> <span class="nav-text">5.在“网站”处右击，选择添加网站，将相应信息填写完整，如下图所示：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-配置好默认文档（index-php、index-html、index-htm，优先顺序自定义）-其它的可以删除。"><span class="nav-number">6.</span> <span class="nav-text">6.配置好默认文档（index.php、index.html、index.htm，优先顺序自定义）,其它的可以删除。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1）琐碎"><span class="nav-number">6.1.</span> <span class="nav-text">1）琐碎</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2）琐碎"><span class="nav-number">6.2.</span> <span class="nav-text">2）琐碎</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-添加php映射，选择“处理程序映射”-–-gt-“添加模块映射”"><span class="nav-number">7.</span> <span class="nav-text">7.添加php映射，选择“处理程序映射” –&gt; “添加模块映射”</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-填写模块信息，如下图，注意，请求路径-php的不能少。选择可执行文件，即你相应php版本目录下的php-cgi-exe"><span class="nav-number">8.</span> <span class="nav-text">8.填写模块信息，如下图，注意，请求路径.php的不能少。选择可执行文件，即你相应php版本目录下的php-cgi.exe</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。"><span class="nav-number">9.</span> <span class="nav-text">9.填写好名称，然后还要配置请求限制，如图所示，选择“文件或文件夹”，然后一路确定。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10-确定后，映射模块列表里有你添加的信息，说明添加模块成功。"><span class="nav-number">10.</span> <span class="nav-text">10.确定后，映射模块列表里有你添加的信息，说明添加模块成功。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#11-重启iis。在浏览器输入访问地址即可访问网站。"><span class="nav-number">11.</span> <span class="nav-text">11.重启iis。在浏览器输入访问地址即可访问网站。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先确保你电脑安装了iis和phpstudy"><span class="nav-number">1.</span> <span class="nav-text">首先确保你电脑安装了iis和phpstudy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择你要使用的IIS和PHP版本"><span class="nav-number">2.</span> <span class="nav-text">选择你要使用的IIS和PHP版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置IIS管理器"><span class="nav-number">3.</span> <span class="nav-text">配置IIS管理器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加php映射"><span class="nav-number">4.</span> <span class="nav-text">添加php映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OJBK"><span class="nav-number">5.</span> <span class="nav-text">OJBK</span></a></li></ol></div>
             
 
           </div>
@@ -756,7 +801,7 @@
     
       <span class="post-meta-item-text">字数统计&#58;</span>
     
-    <span class="total-count" title="字数统计">360</span>
+    <span class="total-count" title="字数统计">594</span>
   
 </div>
 

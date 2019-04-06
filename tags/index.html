@@ -118,17 +118,17 @@
 
 
 
-<meta name="description" content="人间不值得">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JavaScript">
 <meta property="og:url" content="https://ccccai.github.io/tags/index.html">
 <meta property="og:site_name" content="诗&#39;S BLOG">
-<meta property="og:description" content="人间不值得">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-04-05T15:13:17.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="人间不值得">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
 
@@ -350,7 +350,25 @@
       <div class="post-body">
         
         
-          
+          <script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         
       </div>
       
@@ -504,7 +522,7 @@
     
       <span class="post-meta-item-text">字数统计&#58;</span>
     
-    <span class="total-count" title="字数统计">360</span>
+    <span class="total-count" title="字数统计">594</span>
   
 </div>
 

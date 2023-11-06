@@ -1,5 +1,5 @@
 {
-    "id": 10,
+    "id": 2,
     "title": "JavaScript中数组的常用方法",
     "subTitle": "包含es6中的数组方法",
     "link": null,
@@ -11,7 +11,7 @@
     "weight": 1,
     "type": 1,
     "groupTimestamp": "1549548067227",
-    "cover": "https://stickykart.com/wp-content/uploads/2020/11/ES6-450x450.png",
+    "cover": "https://i.morioh.com/bc7a5260ba.png",
     "categoryId": 1,
     "created_at": "2023-11-06T14:06:54.000Z",
     "updated_at": "2023-11-06T14:06:54.000Z",

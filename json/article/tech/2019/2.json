@@ -1,5 +1,5 @@
 {
-    "id": 13,
+    "id": 3,
     "title": "在laravel中使用redis队列，发送邮件",
     "subTitle": "php是这个世界上最好的语言！[doge]",
     "link": null,
@@ -11,7 +11,7 @@
     "weight": 1,
     "type": 1,
     "groupTimestamp": "1565878336520",
-    "cover": null,
+    "cover": "https://logos-download.com/wp-content/uploads/2016/09/Laravel_logo_wordmark_logotype.png",
     "categoryId": 2,
     "created_at": "2023-11-06T14:17:09.000Z",
     "updated_at": "2023-11-06T15:31:51.000Z",
